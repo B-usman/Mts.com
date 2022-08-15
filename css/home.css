@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.ndiv{
+    background-color: green;
+    height: 70px;
+}
+
+.logo{
+    position: relative;
+    height: 80%;
+    top: 10%;
+    left: 1%;
+}
+
+.nl{
+    display: inline-flex;
+    position: relative;
+    float: right;
+    list-style: none;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.dropd{
+    display: none;
+    padding: 0;
+    list-style: none;
+    background-color: green;
+}
+
+.db:hover .dropd{
+    display: block;
+    position: absolute;
+    right: -12px;
+    margin-top: 10px;
+}
+
+.lin{
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.lin:hover{
+    color: black;
+}
+
+/* .lin::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    transition: 1s ease-in;
+}
+
+.lin:hover::after{
+    width: 100%;
+} */
+
+.aft{
+    background-color: orange;
+    border-radius: 5px;
+}
+
+/* hero */
+
+.hero{
+    position: absolute;
+    background: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.head{
+    margin-top: 150px;
+}
+
+.hb{
+    height: 40px;
+    width: 90px;
+    margin-top: 20px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* abt */
+
+.abt{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    margin-top: 420px;
+    padding: 15px;
+}
+
+.abt-1, .abt-2{
+    width: 100%;
+}
+
+.abt-1{
+    padding: 40px;
+}
+
+.at{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+}
+
+.ah{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+.aimg{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* comments */
+
+.comsec{
+    box-shadow: inset 2px 2px rgb(105, 101, 101);
+    border-radius: 15px;
+}
+
+.cms1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+.comment{
+    display: inline-flex;
+    padding: 20px;
+}
+
+.cm-1, .cm-2, .cm-3, .cm-4{
+    width: 100%;
+    padding: 20px;
+    box-shadow: inset 1px 1px rgb(105, 101, 101);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.cmd{
+    width: 20%;
+    border-radius: 50%;
+    position: relative;
+    left: 40%;
+}
+
+.cmd img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+h3, h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* locations */
+
+.locations{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.our{
+    font-size: 35px;
+}
+
+.loc{
+    display: inline-flex;
+    padding: 20px;
+    padding-right: 20%;
+    padding-left: 20%;
+    height: 300px;
+    width: 100%;
+}
+
+.loc div{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.ls{
+    position: relative;
+    background: url(../img/ls.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.og{
+    position: relative;
+    background: url(../img/og.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 250px;
+    margin-left: 10px;
+}
+
+.osp, .lsp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 166, 0, 0.712);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.ls:hover .lsp{
+    opacity: 1;
+}
+
+.og:hover .osp{
+    opacity: 1;
+}   
+
+.ls p, .og p{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    bottom: 0%;
+    font-size: 30px;
+    transform: translate(-50% -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    transition: 1s;
+    color: white;
+}
+
+.ls:hover p{
+    opacity: 1;
+    bottom: 30%;
+}
+
+.og:hover p{
+    opacity: 1;
+    bottom: 30%;
+}
+
+/* desc */
+
+.bbb{
+    display: inline-flex;
+    width: 100%;
+    background: url(../img/peanut-soba-noodles-recipe-11.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.bbb div{
+    width: 100%;
+    text-align: center;
+    color:orange;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bbb div h1{
+    font-size: 40px;
+}
+
+.bbb div p{
+    color: white;
+}
+
+/* footer */
+
+.foot{
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: inline-flex;
+    width: 84%;
+    padding: 20px;
+    background-color: rgb(94, 72, 26);
+    color: white;
+}
+.foot div{
+    width: 100%;
+}
+
+.fc1, .fc2, .fc3{
+    padding: 5px;
+}
+
+.fc2 div{
+    display: inline-flex;
+}
+
+.fc2 ul a{
+    color: white;
+}
+
+.fc2 ul{
+    list-style: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    
+    /* navbar */
+        li{
+            padding: 1px;
+        }
+    /* hero */
+    .hero{
+        position: absolute;
+        top: 0;
+    }
+
+    /* abt */
+
+    .abt{
+        position: relative;
+        display: block;
+        margin-top: 290px;
+    }
+
+    /* comment */
+
+    .comment{
+        display: block;
+    }
+
+    /* location */
+
+    .loc{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    /* footer */
+    .foot{
+        display: block;
+    }
+}
