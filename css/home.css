@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
-.navbar{
+.navbar, .navbar-resp{
     position: sticky;
     top: 0;
     z-index: 10;
+}
+
+.navbar-resp{
+    display: none;
 }
 
 .ndiv{
@@ -341,11 +345,20 @@ h3, h2{
 }
 
 @media screen and (max-width: 700px) {
+
+    body{
+        width: 100%;
+    }
     
     /* navbar */
-        li{
-            padding: 1px;
+        .navbar{
+            display: none;
         }
+
+        .navbar-resp{
+            display: block;
+        }
+        
     /* hero */
     .hero{
         position: absolute;

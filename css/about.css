@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.navbar, .navbar-resp{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-resp{
+    display: none;
+}
+
+.ndiv{
+    background-color: green;
+    height: 70px;
+}
+
+.logo{
+    position: relative;
+    height: 80%;
+    top: 10%;
+    left: 1%;
+}
+
+.nl{
+    display: inline-flex;
+    position: relative;
+    float: right;
+    list-style: none;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.dropd{
+    display: none;
+    padding: 0;
+    list-style: none;
+    background-color: green;
+}
+
+.db:hover .dropd{
+    display: block;
+    position: absolute;
+    right: -12px;
+    margin-top: 10px;
+}
+
+.lin{
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.lin:hover{
+    color: black;
+}
+
+.aft{
+    background-color: orange;
+    border-radius: 5px;
+}
+
+/* hero */
+
+.hero{
+    position: absolute;
+    top: 0;
+    background: url(../img/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-family: Poppins;
+}
+
+.hero hr{
+    width: 20%;
+    position: absolute;
+    left: 40%;
+}
+
+.head{
+    margin-top: 150px;
+}
+
+.hb{
+    height: 40px;
+    width: 95px;
+    margin-top: 20px;
+    background-color: rgba(0, 128, 0, 0);
+    border: 2px solid orange;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* about */
+.about{
+    position: relative;
+    margin-top: 350px;
+    padding: 20px;
+}
+
+
+
+/* footer */
+
+.foot{
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    display: inline-flex;
+    width: 84%;
+    padding: 20px;
+    background-color: rgb(94, 72, 26);
+    color: white;
+}
+.foot div{
+    width: 100%;
+}
+
+.fc1, .fc2, .fc3{
+    padding: 5px;
+}
+
+.fc2 div{
+    display: inline-flex;
+}
+
+.fc2 ul a{
+    color: white;
+}
+
+.fc2 ul{
+    list-style: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px){
+    body{
+        width: 100%;
+    }
+    
+    /* navbar */
+        .navbar{
+            display: none;
+        }
+
+        .navbar-resp{
+            display: block;
+        }
+
+    /* hero */
+    .hero{
+        position: absolute;
+        top: 0;
+    }
+
+
+    /* footer */
+    .foot{
+        display: block;
+    }
+}
