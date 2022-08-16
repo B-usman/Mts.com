@@ -41,6 +41,7 @@ li{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 .dropd{
@@ -76,7 +77,8 @@ a{
 
 .hero{
     position: absolute;
-    background: url(../img/hero.jpg);
+    background: url(../img/bg.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -85,6 +87,24 @@ a{
     color: white;
     width: 100%;
     font-family: Poppins;
+}
+
+.hero span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 54, 54, 0.342);
+}
+
+
+.hero div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .hero hr{
@@ -99,7 +119,7 @@ a{
 
 .hb{
     height: 40px;
-    width: 95px;
+    width: 99px;
     margin-top: 20px;
     background-color: rgba(0, 128, 0, 0);
     border: 2px solid orange;
@@ -134,15 +154,6 @@ a{
 
 .fc2 div{
     display: inline-flex;
-}
-
-.fc2 ul a{
-    color: white;
-}
-
-.fc2 ul{
-    list-style: none;
-    width: 100%;
 } */
 
 @media screen and (max-width: 700px){

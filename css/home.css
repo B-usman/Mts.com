@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
 .navbar, .navbar-resp{
@@ -32,7 +33,6 @@
     float: right;
     list-style: none;
     margin-top: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 li{
@@ -41,6 +41,7 @@ li{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 .dropd{
@@ -67,7 +68,7 @@ a{
     color: black;
 }
 
-/* .lin::after{
+/* .lin::before{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -79,7 +80,7 @@ a{
     transition: 1s ease-in;
 }
 
-.lin:hover::after{
+.lin:hover::before{
     width: 100%;
 } */
 
@@ -92,7 +93,8 @@ a{
 
 .hero{
     position: absolute;
-    background: url(../img/hero.jpg);
+    background: url(../img/bg.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -100,8 +102,26 @@ a{
     text-align: center;
     color: white;
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.hero span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 54, 54, 0.342);
+}
+
+
+.hero div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 .head{
     margin-top: 150px;
@@ -116,7 +136,6 @@ a{
     border-radius: 5px;
     margin-left: 5px;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* abt */
@@ -190,10 +209,6 @@ a{
 .cmd img{
     width: 100%;
     border-radius: 50%;
-}
-
-h3, h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* locations */
@@ -300,7 +315,7 @@ h3, h2{
     color:orange;
     margin-top: auto;
     margin-bottom: auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .bbb div h1{
@@ -335,13 +350,26 @@ h3, h2{
     display: inline-flex;
 }
 
-.fc2 ul a{
-    color: white;
+.fc3{
+    width: 100%;
 }
 
-.fc2 ul{
-    list-style: none;
+.fc3 iframe{
+    position: relative;
     width: 100%;
+}
+
+/* copy */
+.copy{
+    text-align: center;
+    position: relative;
+    right: 8%;
+    left: 8%;
+    width: 84%;
+    bottom: 0;
+    background-color: rgb(94, 72, 26);
+    color: white;
+    font-size: 12px;
 }
 
 @media screen and (max-width: 700px) {
