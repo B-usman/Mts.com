@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
 .navbar, .navbar-resp{
@@ -77,6 +78,7 @@ a{
 
 .hero{
     position: absolute;
+    top: 0;
     background: url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
@@ -129,12 +131,102 @@ a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* content */
+.content{
+    margin-top: 380px;
+}
+
+/* trending */
 
 
+.trending{
+    position: relative;
+    padding: 20px;
+    
+}
+
+.trend{
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.trend div{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid green;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.trend div img{
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.trend div p{
+    display: inline-flex;
+}
+
+.trend div button{
+    position: relative;
+    left: 30%;
+    width: 40%;
+    height: 30px;
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+/* discounted */
+
+.discounted{
+    position: relative;
+    padding: 20px;
+}
+
+/* categories */
+.categories{
+    padding: 20px;
+}
+
+.categories hr{
+    position: relative;
+    left: 30%;
+    right: 30%;
+    width: 40%;
+    border: 1px solid green;
+}
+
+.categories h1, h2{
+    text-align: center;
+}
+
+.categories h1{
+    color: orange;
+    font-size: 35px;
+}
+
+.mens{
+    margin-top: 15px;
+}
+
+.mens div .sm{
+    position: relative;
+    top: 40%;
+    right: 15%;
+    left: 15%;
+    width: 70%;
+    border: 1px solid orange;
+    background-color: rgba(255, 166, 0, 0);
+    color: orange;
+}
 
 /* footer */
 
-/* .foot{
+.foot{
     margin-top: 20px;
     margin-left: 8%;
     margin-right: 8%;
@@ -154,7 +246,29 @@ a{
 
 .fc2 div{
     display: inline-flex;
-} */
+}
+
+.fc3{
+    width: 100%;
+}
+
+.fc3 iframe{
+    position: relative;
+    width: 100%;
+}
+
+/* copy */
+.copy{
+    text-align: center;
+    position: relative;
+    right: 8%;
+    left: 8%;
+    width: 84%;
+    bottom: 0;
+    background-color: rgb(94, 72, 26);
+    color: white;
+    font-size: 12px;
+}
 
 @media screen and (max-width: 700px){
     body{
@@ -169,6 +283,16 @@ a{
         .navbar-resp{
             display: block;
         }
+
+    /* trending */
+    .trend{
+        display: block;
+    }
+
+    .trend div{
+        margin-top: 10px;
+    }
+
 
     /* footer */
     .foot{

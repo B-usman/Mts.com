@@ -173,8 +173,10 @@ form p input{
     width: 80%;
     right: 10%;
     left: 10%;
+    padding: 6px;
     height: 40px;
     border-radius: 4px;
+    border: 1px solid;
 }
 
 form .sub input{
@@ -190,6 +192,7 @@ form p textarea{
     right: 10%;
     left: 10%;
     width: 80%;
+    padding: 6px;
     border-radius: 7px;
 }
 
