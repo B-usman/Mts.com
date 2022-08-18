@@ -8,6 +8,7 @@
     <title>Shop</title>
 </head>
 <body id="body">
+    <!-- navbar -->
     <section class="navbar">
         <div class="ndiv">
             <a href="index.html"><img class="logo" src="img/mts.png" alt=""></a>
@@ -46,18 +47,17 @@
     <div class="purchase">
         <span></span>
         <div class="now" id="now">
+            <h1 style="float: right;"><a href=""><img src="./icons/Cancel icon.png"></a></h1>
             <h2>Purchase Now</h2>
             <form action="">
+                <a href="img/heels1.jpg" id="aimg"><div class="img" id="img"></div></a><br>
+
                 <label>Goods Description</label><br>
-                <select name="desc" id="">
-                    <option value="Strapless shoe with 4' pencil-heel">Strapless shoe with 4' pencil-heel</option>
-                </select>
+                <p id="desc">Strapless shoe with 4' pencil-heel</p>
                 <br><br>
 
                 <label for="">Price</label><br>
-                <select name="price" id="">
-                    <option value="#6,000">#6,000</option>
-                </select>
+                <p id="price">#9,000</p>
                 <br><br>
 
                 <label for="">Color <i>(pick a color)</i></label><br>
@@ -71,18 +71,19 @@
 
                 <label for="">Purchase Options</label><br>
                 <select name="" id="">
-                    <option value="Pick Up">Pick Up</option>
+                    <option value=""><i>*Select a purchase option</i></option>
+                    <option value="Pick Up" id="pickup">Pick Up</option>
                     <option value="Delivery" id="deli">Delivery</option>
                 </select><br><br>
                 <br>
-                <div class="address">
+                <div class="address" id="add">
                     <i>*standard delivery charges apply*</i><br>
-                    <label for="">Address:</label><br>
+                    <label for="">Address: <i>(optional: for delivery customers only)</i></label><br>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <br>
 
-                <p><input type="submit"></p>
+                <p><input type="submit" id="sub"></p>
 
             </form>
         </div>
@@ -184,21 +185,21 @@
                 <div class="trend">
                     <div>
                         <p><h3>Description:</h3>Clasic Work and Party shoe with2' heel</p>
-                        <p><h3>Price:</h3>#7,000 <i> -30% Off</i></p>
+                        <p><h3>Price:</h3>#10,000</p>
                         <a href="img/ladyshoe2.jpg"><div class="test" id="mn1"></div></a>
-                        <button>Buy</button>
+                        <button id="bms1">Purchase</button>
                     </div>
                     <div>
                         <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
+                        <p><h3>Price:</h3>#7,000</p>
                         <a href="img/mens.jpeg"><div class="test" id="mn2"></div></a>
-                        <button>Buy</button>
+                        <button id="bms2">Purchase</button>
                     </div>
                     <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <a href="img/mens.jpeg"><div class="test" id="mn3"><img src="img/mens.jpeg" style="opacity: 0;"></div></a>
-                        <button>Buy</button>
+                        <p><h3>Description:</h3>Party shoes ready to wear</p>
+                        <p><h3>Price:</h3>#9,000</p>
+                        <a href="img/men1.jpg"><div class="test" id="mn3"><img src="img/mens.jpeg" style="opacity: 0;"></div></a>
+                        <button id="bms3">Purchase</button>
                     </div>
                     <div>
                         <button class="sm">See More</button>
@@ -224,13 +225,13 @@
                         <p><h3>Description:</h3>Women Sandal with 5' heel</p>
                         <p><h3>Price:</h3>#12,000</p>
                         <a href="img/ladyshoe1.jpg"><div class="test" id="sh2"></div></a>
-                        <button>Buy</button>
+                        <button id="bls2">Purchase</button>
                     </div>
                     <div>
                         <p><h3>Description:</h3>Sandal with 3' pencil-heel</p>
                         <p><h3>Price:</h3>#6,000</p>
                         <a href="img/heel2.jpg"><div class="test" id="sh3"><img src="img/heel2.jpg" style="opacity: 0;"></div></a>
-                        <button>Buy</button>
+                        <button id="bls3">Purchase</button>
                     </div>
                     <div>
                         <button class="sm">See More</button>
@@ -250,19 +251,19 @@
                         <p><h3>Description:</h3>Brown Reebok Sneakers</p>
                         <p><h3>Price:</h3>#13,000</p>
                         <a href="img/sneakers1.jpg"><div class="test" id="sn1"></div></a>
-                        <button>Buy</button>
+                        <button id="bsn1">Purchase</button>
                     </div>
                     <div>
                         <p><h3>Description:</h3>Nike running-shoes</p>
                         <p><h3>Price:</h3>#9,500</p>
                         <a href="img/sneakers2.jpg"><div class="test" id="sn2"></div></a>
-                        <button>Buy</button>
+                        <button id="bsn2">Purchase</button>
                     </div>
                     <div>
                         <p><h3>Description:</h3>Classic Hiking Shoes</p>
                         <p><h3>Price:</h3>#8,000</p>
                         <a href="img/sneakers3.jpg"><div class="test" id="sn3"><img src="img/heel2.jpg" style="opacity: 0;"></div></a>
-                        <button>Buy</button>
+                        <button id="bsn3">Purchase</button>
                     </div>
                     <div>
                         <button class="sm">See More</button>
@@ -279,22 +280,22 @@
                 </div>
                 <div class="trend">
                     <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000 <i> -30% Off</i></p>
-                        <a href="img/sneakers4.jpg"><div class="test" id="kd1"></div></a>
-                        <button>Buy</button>
+                        <p><h3>Description:</h3>Classic Sneakers for Teens</p>
+                        <p><h3>Price:</h3>#12,000</p>
+                        <a href="img/boys1.jpg"><div class="test" id="kd1"></div></a>
+                        <button id="bkd1">Purchase</button>
                     </div>
                     <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <a href="img/sneakers5.jpg"><div class="test" id="kd2"></div></a>
-                        <button>Buy</button>
+                        <p><h3>Description:</h3>Plaid white and black shoe for a two year old</p>
+                        <p><h3>Price:</h3>#5,000</p>
+                        <a href="img/kids2.jpg"><div class="test" id="kd2"></div></a>
+                        <button id="bkd2">Purchase</button>
                     </div>
                     <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <a href="img/sneakers6.jpg"><div class="test" id="kd3"><img src="img/heel2.jpg" style="opacity: 0;"></div></a>
-                        <button>Buy</button>
+                        <p><h3>Description:</h3>Pink Minnie-shoes for your baby girl</p>
+                        <p><h3>Price:</h3>#6,500</p>
+                        <a href="img/girls1.jpg"><div class="test" id="kd3"><img src="img/heel2.jpg" style="opacity: 0;"></div></a>
+                        <button id="bkd3">Purchase</button>
                     </div>
                     <div>
                         <button class="sm">See More</button>
