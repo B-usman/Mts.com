@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/shop.css">
     <title>Shop</title>
 </head>
-<body>
+<body id="body">
     <section class="navbar">
         <div class="ndiv">
             <a href="index.html"><img class="logo" src="img/mts.png" alt=""></a>
@@ -41,8 +41,55 @@
             </ul>
         </div>
     </section>
+    
+    <!-- forms -->
+    <div class="purchase">
+        <span></span>
+        <div class="now" id="now">
+            <h2>Purchase Now</h2>
+            <form action="">
+                <label>Goods Description</label><br>
+                <select name="desc" id="">
+                    <option value="Strapless shoe with 4' pencil-heel">Strapless shoe with 4' pencil-heel</option>
+                </select>
+                <br><br>
 
-     <!-- content -->
+                <label for="">Price</label><br>
+                <select name="price" id="">
+                    <option value="#6,000">#6,000</option>
+                </select>
+                <br><br>
+
+                <label for="">Color <i>(pick a color)</i></label><br>
+                <select name="" id="">
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="black">Black</option>
+                    <option value="gold">Gold</option>
+                </select>
+                <br><br>
+
+                <label for="">Purchase Options</label><br>
+                <select name="" id="">
+                    <option value="Pick Up">Pick Up</option>
+                    <option value="Delivery" id="deli">Delivery</option>
+                </select><br><br>
+                <br>
+                <div class="address">
+                    <i>*standard delivery charges apply*</i><br>
+                    <label for="">Address:</label><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+
+                <p><input type="submit"></p>
+
+            </form>
+        </div>
+    </div>
+
+    <div id="main">
+             <!-- content -->
 
      <section class="content">
         <div class="hero">
@@ -127,6 +174,8 @@
 
         <div class="categories">
             <h1>Categories</h1>
+
+            <!-- mens -->
             <hr>
             <div class="mens">
                 <div>
@@ -134,21 +183,21 @@
                 </div>
                 <div class="trend">
                     <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
+                        <p><h3>Description:</h3>Clasic Work and Party shoe with2' heel</p>
                         <p><h3>Price:</h3>#7,000 <i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <a href="img/ladyshoe2.jpg"><div class="test" id="mn1"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
                         <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
                         <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <a href="img/mens.jpeg"><div class="test" id="mn2"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
                         <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
                         <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <a href="img/mens.jpeg"><div class="test" id="mn3"><img src="img/mens.jpeg" style="opacity: 0;"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
@@ -157,6 +206,7 @@
                 </div>
             </div>
 
+            <!-- ladies -->
             <br>
             <hr>
             <div class="mens">
@@ -165,21 +215,21 @@
                 </div>
                 <div class="trend">
                     <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000 <i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <p><h3>Description:</h3>Strapless shoe with 4' pencil-heel</p>
+                        <p><h3>Price:</h3>#9,000</p>
+                        <a href="img/heels1.jpg"><div class="test" id="sh1"></div></a>
+                        <button id="buy">Purchase</button>
+                    </div>
+                    <div>
+                        <p><h3>Description:</h3>Women Sandal with 5' heel</p>
+                        <p><h3>Price:</h3>#12,000</p>
+                        <a href="img/ladyshoe1.jpg"><div class="test" id="sh2"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
-                        <button>Buy</button>
-                    </div>
-                    <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <p><h3>Description:</h3>Sandal with 3' pencil-heel</p>
+                        <p><h3>Price:</h3>#6,000</p>
+                        <a href="img/heel2.jpg"><div class="test" id="sh3"><img src="img/heel2.jpg" style="opacity: 0;"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
@@ -188,6 +238,7 @@
                 </div>
             </div>
 
+            <!-- sneakers -->
             <br>
             <hr>
             <div class="mens">
@@ -196,21 +247,21 @@
                 </div>
                 <div class="trend">
                     <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000 <i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <p><h3>Description:</h3>Brown Reebok Sneakers</p>
+                        <p><h3>Price:</h3>#13,000</p>
+                        <a href="img/sneakers1.jpg"><div class="test" id="sn1"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <p><h3>Description:</h3>Nike running-shoes</p>
+                        <p><h3>Price:</h3>#9,500</p>
+                        <a href="img/sneakers2.jpg"><div class="test" id="sn2"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
-                        <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                        <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <p><h3>Description:</h3>Classic Hiking Shoes</p>
+                        <p><h3>Price:</h3>#8,000</p>
+                        <a href="img/sneakers3.jpg"><div class="test" id="sn3"><img src="img/heel2.jpg" style="opacity: 0;"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
@@ -219,6 +270,7 @@
                 </div>
             </div>
 
+            <!-- kiddies -->
             <br>
             <hr>
             <div class="mens">
@@ -229,19 +281,19 @@
                     <div>
                         <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
                         <p><h3>Price:</h3>#7,000 <i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <a href="img/sneakers4.jpg"><div class="test" id="kd1"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
                         <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
                         <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <a href="img/sneakers5.jpg"><div class="test" id="kd2"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
                         <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
                         <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                        <img src="img/mens.jpeg" alt="">
+                        <a href="img/sneakers6.jpg"><div class="test" id="kd3"><img src="img/heel2.jpg" style="opacity: 0;"></div></a>
                         <button>Buy</button>
                     </div>
                     <div>
@@ -250,7 +302,8 @@
                 </div>
             </div>
         </div>
-    </section>
+     </section>
+    </div>
 
     <!-- footer -->
     <section class="footer">
@@ -276,6 +329,9 @@
         <!-- copyright -->
         <div class="copy"><p>House of Code&copy;-2022</p></div>
     </section>
+
+    
+<script src="./script/shop.js"></script>
 
 </body>
 </html>

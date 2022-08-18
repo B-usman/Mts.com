@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Poppins;
+    scroll-behavior: smooth;
 }
 
 .navbar, .navbar-resp{
@@ -224,6 +225,89 @@ a{
     color: orange;
 }
 
+.test{
+    position: relative;
+    height: 200px;
+    width: 80%;
+    right: 3%;
+}
+
+/* mens */
+#mn1{
+    background: url(../img/ladyshoe2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#mn2{
+    background: url(../img/mens.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#mn3{
+    background: url(../img/mens.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ladies' */
+#sh1{
+    background: url(../img/heels1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sh2{
+    background: url(../img/ladyshoe1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sh3{
+    background: url(../img/heel2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* sneakers */
+#sn1{
+    background: url(../img/sneakers1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sn2{
+    background: url(../img/sneakers2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#sn3{
+    background: url(../img/sneakers3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* kiddies */
+#kd1{
+    background: url(../img/sneakers4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#kd2{
+    background: url(../img/sneakers5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#kd3{
+    background: url(../img/sneakers6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 /* footer */
 
 .foot{
@@ -270,6 +354,68 @@ a{
     font-size: 12px;
 }
 
+/* purchase */
+.purchchase{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: aqua;
+}
+
+.purchchase span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 99;
+}
+
+.now{
+    display: none;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.877);
+    border: 1px solid green;
+    position: relative;
+    width: 40%;
+    right: 30%;
+    left: 30%;
+    height: 90%;
+    top: 10%;
+    bottom: 10%;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    z-index: 99;
+}
+
+.now form select{
+    height: 30px;
+    border-radius: 6px;
+}
+
+.now form div textarea{
+    position: relative;
+    height: 40px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.now form input{
+    position: relative;
+    width: 60%;
+    left: 20%;
+    right: 20%;
+    height: 30px;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 700px){
     body{
         width: 100%;
@@ -282,6 +428,9 @@ a{
 
         .navbar-resp{
             display: block;
+            position: sticky;
+            top: 0;
+            width: 100%;
         }
 
     /* trending */
@@ -297,5 +446,15 @@ a{
     /* footer */
     .foot{
         display: block;
+    }
+
+    /* purchase */
+    .now{
+        padding-bottom: 10px;
+        position: relative;
+        margin-top: 10px;
+        width: 80%;
+        left: 10%;
+        right: 10%;
     }
 }
