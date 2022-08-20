@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/shop.css">
+    <link rel="icon" href="img/mts.png">
     <title>Shop</title>
 </head>
 <body id="body">
@@ -17,7 +18,7 @@
                 <li></i><a class="lin" href="index.html">Home</a></li>
                 <li><a class="lin" href="about.html">About</a></li>
                 <li><a class="lin" href="contact.html">Contact</a></li>
-                <li class="db"><a class="lin" href="shop.html">Shop Now</a>
+                <li class="db"><a class="lin" href="shop.html">Shop</a>
                     <ul class="dropd">
                         <li><a class="lin" href="#">Mens</a></li>
                         <li><a class="lin" href="#">Ladies</a></li>
@@ -47,31 +48,32 @@
     <div class="purchase">
         <span></span>
         <div class="now" id="now">
-            <h1 style="float: right;"><a href=""><img src="./icons/Cancel icon.png"></a></h1>
+            <h1 style="float: right;"><a href=""><img id="x" src="./icons/Cancel icon.png"></a></h1>
             <h2>Purchase Now</h2>
-            <form action="">
-                <a href="img/heels1.jpg" id="aimg"><div class="img" id="img"></div></a><br>
+            <form action="https://formspree.io/f/mrgdgddw" method="POST">
+                <a href="img/heels1.jpg" id="aimg"><div class="img" id="img" value="img/heels1.jpg" name="image"></div></a><br>
 
                 <label>Goods Description</label><br>
-                <p id="desc">Strapless shoe with 4' pencil-heel</p>
+                <input class="fix" type="text" id="desc" name="description" value="Strapless shoe with 4' pencil-heel" readonly>
                 <br><br>
-
+                
                 <label for="">Price</label><br>
-                <p id="price">#9,000</p>
+                <input class="fix" type="text" id="price" name="price" value="#9,000" readonly>
                 <br><br>
 
                 <label for="">Color <i>(pick a color)</i></label><br>
-                <select name="" id="">
-                    <option value="red">Red</option>
-                    <option value="green">Green</option>
-                    <option value="black">Black</option>
-                    <option value="gold">Gold</option>
+                <select name="color" id="" required>
+                    <option><i></i></option>
+                    <option value="red" id="opt1">Red</option>
+                    <option value="green" id="opt2">Green</option>
+                    <option value="black" id="opt3">Black</option>
+                    <option value="gold" id="opt4">Gold</option>
                 </select>
                 <br><br>
 
                 <label for="">Purchase Options</label><br>
-                <select name="" id="">
-                    <option value=""><i>*Select a purchase option</i></option>
+                <select name="options" id="" required>
+                    <option><i></i></option>
                     <option value="Pick Up" id="pickup">Pick Up</option>
                     <option value="Delivery" id="deli">Delivery</option>
                 </select><br><br>
@@ -79,11 +81,15 @@
                 <div class="address" id="add">
                     <i>*standard delivery charges apply*</i><br>
                     <label for="">Address: <i>(optional: for delivery customers only)</i></label><br>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="address" id="" cols="30" rows="10"></textarea>
                 </div>
                 <br>
 
-                <p><input type="submit" id="sub"></p>
+                <label for="">Phone/Whatsapp/email</label><br>
+                <textarea name="contact-method" id="" cols="30" rows="10" required></textarea>
+                <br>
+
+                <p><input class="sub" type="submit" id="sub"></p>
 
             </form>
         </div>
@@ -109,30 +115,30 @@
             </div>
             <div class="trend">
                 <div>
-                    <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
+                    <p><h3>Description:</h3>Trending-1</p>
                     <p><h3>Price:</h3>#7,000</p>
-                    <img src="img/mens.jpeg" alt="">
-                    <button>Buy</button>
+                    <a href="img/mens.jpeg"><div class="test" id="tr1"></div></a>
+                    <button id="btr1">Purchase</button>
                 </div>
                 <div>
-                    <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                    <p><h3>Price:</h3>#7,000</p>
-                    <img src="img/mens.jpeg" alt="">
-                    <button>Buy</button>
+                    <p><h3>Description:</h3>Trending-2</p>
+                    <p><h3>Price:</h3>#9,000</p>
+                    <a href="img/heels1.jpg"><div class="test" id="tr2"></div></a>
+                    <button id="btr2">Purchase</button>
                 </div>
                 <div>
-                    <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                    <p><h3>Price:</h3>#7,000</p>
-                    <img src="img/mens.jpeg" alt="">
-                    <button>Buy</button>
+                    <p><h3>Description:</h3>Trending-3</p>
+                    <p><h3>Price:</h3>#9,500</p>
+                    <a href="img/sneakers2.jpg"><div class="test" id="tr3"><img src="img/mens.jpeg" style="opacity: 0;"></div></a>
+                    <button id="btr3">Purchase</button>
                 </div>
                 <div>
-                    <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                    <p><h3>Price:</h3>#7,000</p>
-                    <img src="img/mens.jpeg" alt="">
-                    <button>Buy</button>
+                    <p><h3>Description:</h3>Trending-4</p>
+                    <p><h3>Price:</h3>#12,000</p>
+                    <a href="img/ladyshoe1.jpg"><div class="test" id="tr4"></div></a>
+                    <button id="btr4">Purchase</button>
                 </div>
-            </div>
+            </div> 
         </div>
 
         <hr style="border: 1px solid green;">
@@ -144,28 +150,28 @@
             </div>
             <div class="trend">
                 <div>
-                    <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                    <p><h3>Price:</h3>#7,000 <i> -30% Off</i></p>
-                    <img src="img/mens.jpeg" alt="">
-                    <button>Buy</button>
+                    <p><h3>Description:</h3>Dicounted-1</p>
+                    <p><h3>Price:</h3>#4,500 <i class="dval">15% off</i></p>
+                    <a href="img/girls5.jpg"><div class="test" id="dc1"></div></a>
+                    <button id="dsc1">Purchase</button>
                 </div>
                 <div>
-                    <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                    <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                    <img src="img/mens.jpeg" alt="">
-                    <button>Buy</button>
+                    <p><h3>Description:</h3>Dicounted-2</p>
+                    <p><h3>Price:</h3>#13,500<i class="dval"> 10% Off</i></p>
+                    <a href="img/boys7.jpg"><div class="test" id="dc2"></div></a>
+                    <button id="dsc2">Purchase</button>
                 </div>
                 <div>
-                    <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                    <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                    <img src="img/mens.jpeg" alt="">
-                    <button>Buy</button>
+                    <p><h3>Description:</h3>Dicounted-3</p>
+                    <p><h3>Price:</h3>#9,600<i class="dval"> 20% Off</i></p>
+                    <a href="img/kids8.jpg"><div class="test" id="dc3"><img src="img/mens.jpeg" style="opacity: 0;"></div></a>
+                    <button id="dsc3">Purchase</button>
                 </div>
                 <div>
-                    <p><h3>Description:</h3>Vintage shoe with 2' heel</p>
-                    <p><h3>Price:</h3>#7,000<i> -30% Off</i></p>
-                    <img src="img/mens.jpeg" alt="">
-                    <button>Buy</button>
+                    <p><h3>Description:</h3>Dicounted-4</p>
+                    <p><h3>Price:</h3>#9,000<i class="dval"> 10% Off</i></p>
+                    <a href="img/men9.jpg"><div class="test" id="dc4"></div></a>
+                    <button id="dsc4">Purchase</button>
                 </div>
             </div>
         </div>
@@ -323,7 +329,7 @@
             <hr>
             <div class="fc3">
                 <h2>Locate Us</h2>
-                <iframe src="https://goo.gl/maps/fGNxUHYv4LAKwvEaA" frameborder="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7926.261110111898!2d3.305945823028294!3d6.63070267192903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9117e6ebb23d%3A0x8b6007542ceb84fb!2sOrile%20Agege%20102212%2C%20Lagos!5e0!3m2!1sen!2sng!4v1660881742063!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         
